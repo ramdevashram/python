@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/ramdevashram/python.git'
+                git branch: 'master', url: 'https://github.com/ramdevashram/python.git'
             }
         }
         stage('Maven') {
