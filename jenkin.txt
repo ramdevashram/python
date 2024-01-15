@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Maven') {
             steps {
-                sh '''python hello.py'''
+                sh '''python python.py'''
             }
         }
     }
