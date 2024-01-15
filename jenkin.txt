@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git') {
+            steps {
+                git branch: 'main', url: 'https://github.com/ramdevashram/python.git'
+            }
+        }
+        stage('Maven') {
+            steps {
+                sh '''python hello.py
+                python  "Hello World"'''
+            }
+        }
+    }
+}
