@@ -7,7 +7,7 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/ramdevashram/python.git'
             }
         }
-        stage('Maven') {
+        stage('Code') {
             steps {
                 sh 'python python.py'
             }
